@@ -1,0 +1,18 @@
+{
+  "extends": ["react-app", "react-app/jest"],
+  "rules": {
+    "import/no-anonymous-default-export": [
+      "error",
+      {
+        "allowAnonymousClass": false,
+        "allowAnonymousFunction": false,
+        "allowArray": false,
+        "allowArrowFunction": true,
+        "allowCallExpression": true, // The true value here is for backward compatibility
+        "allowLiteral": false,
+        "allowObject": false
+      }
+    ],
+    "react-hooks/exhaustive-deps": "off" // 0 = off, 1 = warn, 2 = error
+  }
+}

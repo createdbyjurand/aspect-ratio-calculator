@@ -1,0 +1,106 @@
+.pureRatioAppContainer {
+  // border: 1px solid red;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 50px;
+
+  .pureRatioForm {
+    // border: 1px solid red;
+
+    .pureRatioTitle {
+      font-size: 1rem;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+    }
+
+    .pureRatioOutput {
+      font-size: 1rem;
+      background: #222222;
+      color: white;
+      border-radius: 20px;
+      padding: 10px 20px;
+      margin: 5px;
+      max-height: 80vh;
+      overflow: auto;
+      // outline: 4px solid red;
+      // outline-offset: -15px;
+    }
+
+    // output overflow scroll width
+    ::-webkit-scrollbar {
+      width: 40px;
+    }
+
+    // output overflow scroll track
+    ::-webkit-scrollbar-track {
+      background: rgb(30, 30, 30);
+      border-radius: 20px;
+    }
+
+    // output overflow scroll handle
+    ::-webkit-scrollbar-thumb {
+      background: rgb(40, 40, 40);
+      border: 6px solid rgb(55, 155, 255);
+      border-radius: 20px;
+      min-height: 40px;
+    }
+
+    // output overflow scroll handle on hover
+    ::-webkit-scrollbar-thumb:hover {
+      border: 8px solid rgb(55, 155, 255);
+    }
+
+    .pureRatioInputContainer {
+      // border: 1px solid red;
+
+      .pureRatioInputWidth,
+      .pureRatioInputHeight {
+        font-size: 1rem;
+        border: none;
+        border-radius: 20px;
+        background: #404040;
+        color: white;
+        padding: 10px 20px;
+        margin: 5px;
+      }
+
+      .pureRatioSubmit {
+        font-size: 1rem;
+        border: none;
+        border-radius: 20px;
+        background: rgb(55, 155, 255);
+        color: white;
+        padding: 10px 20px;
+        margin: 5px;
+      }
+
+      textarea:focus,
+      input:focus {
+        outline: none;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pureRatioAppContainer {
+    .pureRatioForm {
+      white-space: normal;
+      width: auto;
+    }
+  }
+}
