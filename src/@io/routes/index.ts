@@ -1,4 +1,4 @@
-export * from './MongoDB';
+export * from './Home';
 export * from './NoMatch';
-export * from './PureRatio';
-export * from './SquareRatio';
+export * from './PureAspectRatio';
+export * from './SquareAspectRatio';

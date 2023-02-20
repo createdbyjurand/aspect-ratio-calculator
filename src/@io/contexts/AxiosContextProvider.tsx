@@ -1,11 +1,9 @@
 import axios, { AxiosInstance } from 'axios';
 import { createContext, useEffect, useRef } from 'react';
 
-interface IAxiosContext {
-  instanceRef: React.MutableRefObject<AxiosInstance>;
-}
+interface IAxiosContext {}
 
-export const AxiosContext = createContext<IAxiosContext | null>(null);
+export const AxiosContext = createContext<IAxiosContext | null | AxiosInstance>(null);
 
 interface IAxiosContextProviderProps {
   config: {};

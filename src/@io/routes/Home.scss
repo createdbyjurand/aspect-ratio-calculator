@@ -1,0 +1,41 @@
+.routes-home {
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 13em);
+
+  .container {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+
+    .text-box {
+      // border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      padding: 1em;
+
+      .img--pure-aspect-ratio,
+      .img--square-aspect-ratio {
+        // border: 1px solid red;
+        height: 3em;
+      }
+
+      .img--square-aspect-ratio {
+        margin-top: 3em;
+      }
+
+      p {
+        // border: 1px solid red;
+        font-size: 1.5em;
+        color: #ccc;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

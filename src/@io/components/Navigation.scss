@@ -1,0 +1,23 @@
+.components--navigation {
+  display: flex;
+  gap: 1rem;
+  padding: 1em;
+
+  .logo--container {
+    display: flex;
+    gap: 1rem;
+    line-height: 0;
+
+    .logo--img {
+      height: 3em;
+    }
+  }
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: unset;
+    text-decoration: none;
+  }
+}

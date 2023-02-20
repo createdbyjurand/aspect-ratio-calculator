@@ -1,0 +1,30 @@
+.components--footer {
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+  justify-content: center;
+  color: gray;
+
+  .container {
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+
+    .logo--container {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      line-height: 0;
+
+      .logo--img {
+        height: 3em;
+      }
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}

@@ -1,5 +1,10 @@
 ## Notes
 
+## Replace
+
+`^ *"(.*)": ".*$`
+`$1`
+
 ### React + TypeScript
 
 `npx create-react-app ratio-calculator --template typescript`
